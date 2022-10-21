@@ -1,77 +1,101 @@
 <!DOCTYPE html>
 <html>
- <head>
- <meta charset="utf-8" />
- <link rel="stylesheet" href="style.css" />
- <title>Booki</title>
- </head>
- 
- <body>
- <div id="bloc_page">
- <header>
- <div id="logo"> 
-<img src="images/zozor_logo.png" alt="Logo de Booki" />
- </div>
- <h1>Trouvez votre hébergement pour des vacancesde rêve</h1> 
- </div>
- <h2>En plein centre-ville où en pleine nature</h2>
- </div>
- 
- <nav>
- <ul>
- <li><a href="#">Hébergement</a></li>
- <li><a href="#">Activité</a></li>
- </ul>
- </nav>
- </header>
- 
- <div id="banniere_image">
- <div id="banniere_description">
- Filtres
- <a href="#" class="bouton_bleu">Rechercher <img src="images/flecheblanchedroite.png" alt="" /></a>
- <a href="#" class="bouton_economique">Economique <img src="images/flecheblanchedroite.png" alt="" /></a>
- </div>
- </div>
-<section>
- <article>
- <h1><img src="images/ico_epingle.png" alt="Catégorie voyage" class="ico_categorie" />Je suis un 
-grand voyageur</h1>
- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec sagittis eu. Integer vitae 
-lectus ac nunc posuere pellentesque non at eros. Suspendisse non lectus lorem.</p>
- <p>Vivamus nu.</p>
- <p>Phasellus ligula massa, congue ac vulputate non, dignissim at augue. Sed auctor fringilla quam 
-quis porttitor. Praest amet, egestas at sem.</p>
- </article>
- <aside>
- <h1>À propos de l'auteur</h1>
- <img src="images/bulle.png" alt="" id="fleche_bulle" />
- <p id="photo_zozor"><img src="images/zozor_classe.png" alt="Photo de Zozor" /></p>
- <p>Laisse-moi le temps de me présenter&nbsp;: je m'appelle Zozor, je suis né un 23 novembre 
-2005.</p>
- <p>Bien maigre, n'est-ce pas ? C'est pourquoi, aujourd'hui, j'ai décidé d'écrire ma biographie afin 
-que vous sachiez qui je suis réellement.</p>
- <p><img src="images/facebook.png" alt="Facebook" /><img src="images/twitter.png" alt="Twitter" 
-/><img src="images/vimeo.png" alt="Vimeo" /><img src="images/flickr.png" alt="Flickr" /><img 
-src="images/rss.png" alt="RSS" /></p>
- </aside>
- </section> 
- <footer>
- <div id="apropos">
- <h1>Mon dernier tweet</h1>
- <p>Hii haaaaaan !</p>
- <p>le 12 mai à 23h12</p>
- </div>
- <div id="nos_hébergement">
-    <h1>Mon dernier tweet</h1>
-    <p>Hii haaaaaan !</p>
-    <p>le 12 mai à 23h12</p>
-    </div>
-    <div id="assistance">
-        <h1>Mon dernier tweet</h1>
-        <p>Hii haaaaaan !</p>
-        <p>le 12 mai à 23h12</p>
-        </div>
- </footer>
- </div>
- </body>
+
+<head>
+   <meta charset="utf-8" />
+   <link rel="stylesheet" href="style.css" />
+   <title>Booki</title>
+</head>
+
+<body>
+
+   <header>
+      <div id="logo">
+         <img src="images/booki_logo.png" alt="Logo de Booki" />
+      </div>
+
+      <nav>
+         <ul>
+            <li><a href="#">Hébergement</a></li>
+            <li><a href="#">Activité</a></li>
+         </ul>
+      </nav>
+   </header>
+
+   <div>
+      <h1>Trouvez votre hébergement pour des vacancesde rêve</h1>
+      <h2>En plein centre-ville où en pleine nature</h2>
+
+      <form>
+         <p>
+            <input type="text" name="lieu" id="lieu" /><button for="lieu">Rechercher</button>
+         </p>
+         <p>
+            <label for="filtre">Filtres</label> : 
+            <input type="checkbox" name="filtre" value="eco">Economique</input>
+            <input type="checkbox" name="filtre" value="fam">Familial</input>
+            <input type="checkbox" name="filtre" value="rom">Romantique</input>
+            <input type="checkbox" name="filtre" value="ani">Animaux autorisés</input>
+         </p>
+      </form>
+      <p>Plus de 500 logements sont disponibles dans cette ville</p>
+   </div>
+
+
+   <section>
+      <h1>Les plus populaire</h1>
+      <aside>
+         <p><img src="images/photo1.jpg" alt="Photographie" /></p>
+      </aside>
+
+      <aside>
+         <p><img src="images/photo2.jpg" alt="Photographie" /></p>
+      </aside>
+   </section>
+   <aside>
+      <p><img src="images/photo3.jpg" alt="Photographie" /></p>
+   </aside>
+   <section>
+
+      <div id="hebergement">
+         <h3>Hébergement à Marseille</h3>
+         <article>
+            <img src="/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg">
+            <h4>Titre</h4>
+            <h5>sous titre</h5>
+            étoile
+         </article>
+         <p><img src="images/photo1.jpg" alt="Photographie" /><img src="images/photo2.jpg" alt="Photographie" /><img
+               src="images/photo3.jpg" alt="Photographie" /><img src="images/photo4.jpg" alt="Photographie" />><img
+               src="images/photo5.jpg" alt="Photographie" />><img src="images/photo6.jpg" alt="Photographie" /></p>
+      </div>
+
+
+
+      <div id="activites">
+         <h3>Activités à Marseille</h3>
+         <p><img src="images/photo1.jpg" alt="Photographie" /><img src="images/photo2.jpg" alt="Photographie" /><img
+               src="images/photo3.jpg" alt="Photographie" /><img src="images/photo4.jpg" alt="Photographie" /></p>
+      </div>
+      <footer>
+         <div id="apropos">
+            <h1>A propos</h1>
+            <p>Founctionnement du site</p>
+            <p>Condition générales</p>
+            <p>Données et confidentialité</p>
+         </div>
+         <div id="nos_hebergement">
+            <h1>Nos hébérgements</h1>
+            <p>Charte qualité</p>
+            <p>Proposer votre hôtel</p>
+         </div>
+         <div id="assistance">
+            <h1>Assistance</h1>
+            <p>Centre d'aide</p>
+            <p>Nous contacter</p>
+         </div>
+      </footer>
+      </div>
+</body>
+
 </html>
