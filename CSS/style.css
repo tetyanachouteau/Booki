@@ -10,3 +10,8 @@ body {
     align-items: flex-end;
     border: 1px solid black;
    }
+   nav ul
+    {
+ list-style-type: none;
+ display: flex;
+}
