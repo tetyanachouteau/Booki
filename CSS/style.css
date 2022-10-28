@@ -29,5 +29,12 @@ body {
     
    }
 
-  
+    #hebergement li {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border: 1px solid black;
+   } 
+   
+
 
