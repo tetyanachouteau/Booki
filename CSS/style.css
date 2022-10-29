@@ -1,40 +1,88 @@
 body {
-    margin:auto;
-    max-width:1400px;
+    margin: auto;
+    max-width: 1400px;
     border: 1px solid black;
-   }
-   header
-   {
-   display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    border: 1px solid black;
-   }
-   nav ul {
- list-style-type: none;
- display: flex;
-   }
-   nav li {
- margin-right: 15px;
-   }
+}
 
-   ul li {
-    list-style-type: none;
-   }
-
-   img{
-    
-        width: 59px;
-        height: 60px;
-    
-   }
-
-    #hebergement li {
+header {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     border: 1px solid black;
-   } 
-   
+}
 
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
 
+nav li {
+    margin-right: 15px;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+main {
+    display: block;
+}
+
+#hebergement {
+    display: flex;
+}
+
+#offres {
+    flex: 1;
+    background: #F2F2F2;
+    border-radius: 20px;
+    margin-right: 40px;
+}
+
+#offres ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#offres li {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#offres img {
+    width: 246px;
+    height: 124px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px 20px 0px 0px;
+}
+
+#populaires {
+    background: #F2F2F2;
+    border-radius: 20px;
+}
+
+#populaires li {
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+#populaires img{
+    width: 137px;
+    height: 144px;
+    border: 5px solid #FFFFFF;
+border-radius: 20px 0px 0px 20px;
+}
+
+#activites img{
+    width: 302px;
+    height: 388px;
+    border-radius: 20px 20px 0px 0px;
+}
+
+ul.footer {
+    display: flex;
+}
