@@ -2,13 +2,22 @@ body {
     margin: auto;
     max-width: 1400px;
     border: 1px solid black;
+    font-family: 'Raleway';
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    border: 1px solid black;
+}
+
+#logo img {
+    width: 61.09px;
+    height: 19px;
+    margin-top: 44px;
+}
+
+nav {
+    margin-top: 48px;
 }
 
 nav ul {
@@ -70,14 +79,14 @@ main {
     display: flex;
 }
 
-#populaires img{
+#populaires img {
     width: 137px;
     height: 144px;
     border: 5px solid #FFFFFF;
-border-radius: 20px 0px 0px 20px;
+    border-radius: 20px 0px 0px 20px;
 }
 
-#activites img{
+#activites img {
     width: 302px;
     height: 388px;
     border-radius: 20px 20px 0px 0px;
