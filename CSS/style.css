@@ -246,6 +246,15 @@ main {
     border-radius: 20px 20px 0px 0px;
 }
 
+#activites ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 43px
+}
+
 ul.footer {
     display: flex;
+    gap: 250px;
+    background: #F2F2F2;
+    padding: 45px 70px 70px 70px;
 }
