@@ -1,7 +1,6 @@
 body {
-    margin: auto;
+    margin: 0px 50px;
     max-width: 1400px;
-    border: 1px solid black;
     font-family: 'Raleway';
 }
 
@@ -89,17 +88,17 @@ main {
     display: block;
 }
 
-#recherche nav {
+#recherche div {
     display: flex;
 }
 
-#recherche nav ul {
+#recherche div ul {
     display: flex;
     margin: 0;
     gap: 50px;
 }
 
-#recherche nav li {
+#recherche div li {
     height: 40px;
     display: flex;
     align-items: center;
@@ -111,15 +110,15 @@ main {
     padding: 0 10px;
 }
 
-#recherche nav li:hover {
+#recherche div li:hover {
     background-color: #c0d7f8;
 }
 
-#recherche nav li i {
+#recherche div li i {
     color: #0065FC;
 }
 
-#recherche nav li a {
+#recherche div li a {
     margin-left: 10px;
 }
 
@@ -205,17 +204,25 @@ main {
     padding: 40px;
 }
 
-#offres ul {
+#offres div {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    gap: 31px
+    gap: 31px;
 }
 
-#offres li {
+#offres a {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin: 0px
+}
+
+#offres figure{
+    margin: 0px;
+}
+
+#offres figcaption{
+    margin: 16px;
 }
 
 #offres img {
@@ -231,11 +238,19 @@ main {
     width: 420px;
 }
 
-#populaires li {
+#populaires a {
     background-color: #FFFFFF;
     border-radius: 20px;
     margin-bottom: 20px;
     display: flex;
+}
+
+#populaires figure{
+    margin: 0px;
+}
+
+#populaires figcaption{
+    margin: 16px;
 }
 
 #populaires img {
@@ -251,7 +266,7 @@ main {
     border-radius: 20px 20px 0px 0px;
 }
 
-#activites ul{
+#activites div {
     display: flex;
     flex-wrap: wrap;
     gap: 43px
