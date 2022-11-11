@@ -379,11 +379,39 @@ ul.footer li li {
     #populaires div {
         display: flex;
         flex-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    #populaires div.infos {
+        display: block;
     }
     
+    #populaires img {
+        width: 106px;
+    }
+
     #populaires a {
         width: 252px;
     }
 
+    #populaires h3 {
+        font-size: 14px;
+    }
 
+    #populaires p {
+        font-size: 13px;
+    }
+
+    #populaires figcaption {
+        margin-bottom: 10px;
+    }
+
+    #activites img {
+        width: 188px;
+        height: 208px;
+    }
+
+    #activites h3 {
+        width: 148px;
+    }
 }
