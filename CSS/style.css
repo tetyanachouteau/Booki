@@ -368,6 +368,11 @@ ul.footer li li {
 
 @media all and (max-width: 1024px)
 {
+    body {
+        padding-left: 72px;
+        padding-right: 72px;
+    }
+
     #hebergement {
         flex-direction: column;
     }
@@ -413,5 +418,9 @@ ul.footer li li {
 
     #activites h3 {
         width: 148px;
+    }
+
+    ul.footer {
+        gap: 120px;
     }
 }
