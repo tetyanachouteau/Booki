@@ -365,8 +365,8 @@ ul.footer li li {
     font-size: 16px;
     margin-top: 12px;
 }
-
-@media all and (max-width: 1024px)
+/*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui on taille max de 1024*/
+@media all and (max-width: 992px)
 {
     body {
         padding-left: 72px;
@@ -423,4 +423,4 @@ ul.footer li li {
     ul.footer {
         gap: 120px;
     }
-}
+} 
