@@ -372,7 +372,7 @@ ul.footer li li {
 
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
-@media only screen and (min-device-width : 728px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
     body {
         padding-left: 60px;
         padding-right: 60px;
@@ -428,44 +428,142 @@ ul.footer li li {
     ul.footer {
         gap: 120px;
     }
-}
 
-/* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php */
-@media only screen and (min-device-width : 320px) and (max-device-width : 728px) {
-    body {
-        padding-left: 0;
-        padding-right: 0;
-    }
-    
-    header {
-        flex-direction: column;
-    }
+    /* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
+    Mais on recupère aussi le desgin tablette car on est dans la media query tablette
+    */
+    @media only screen and (min-device-width : 320px) and (max-device-width : 728px) {
+        body {
+            padding-left: 0;
+            padding-right: 0;
+        }
 
-    #logo {
-        display: flex;
-        justify-content: center;
-    }
+        header {
+            flex-direction: column;
+        }
 
-    #logo img {
-        margin-top: 21px;
-    }
+        #logo {
+            display: flex;
+            justify-content: center;
+        }
 
-    header nav ul {
-        justify-content: space-around;
-        padding-left: 0;
-    }
+        #logo img {
+            margin-top: 21px;
+        }
 
-    header nav li {
-        border-bottom: 2px solid #c0d7f8;
-        padding-bottom: 21px;
-        margin-right: 0;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+        header nav ul {
+            justify-content: space-around;
+            padding-left: 0;
+        }
 
-    /* hérite de li et modifie juste celui qui a la classe active */
-    header nav li.active {
-        border-bottom-color: #0065FC;
+        header nav li {
+            border-bottom: 2px solid #c0d7f8;
+            padding-bottom: 21px;
+            margin-right: 0;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* hérite de li et modifie juste celui qui a la classe active */
+        header nav li.active {
+            border-bottom-color: #0065FC;
+        }
+
+        #recherche {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #lieu {
+            width: 100%;
+        }
+
+        #filtres {
+            flex-direction: column;
+        }
+
+        #recherche div ul {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        #recherche div li {
+            margin-bottom: 10px;
+            /* Pour avoir les boutons tous identiques en taille */
+            min-width: 196px;
+        }
+
+        label {
+            margin-bottom: 15px;
+        }
+
+        #hebergement {
+            margin-bottom: 0;
+        }
+
+        #populaires {
+            order: -1;
+            border-radius: 0;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #populaires div {
+            gap: 0;
+        }
+
+        #populaires a {
+            box-shadow: 0px 0px 9px 2px #E2E2E2;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        #offres {
+            border-radius: 0;
+            background-color: #FFFFFF;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 0;
+            padding-bottom: 0;
+        }
+
+        #offres a {
+            box-shadow: 0px 0px 9px 2px #E2E2E2;
+            width: 100%;
+            margin-bottom: 12px;
+        }
+
+        #offres a.plus {
+            box-shadow: none;
+            visibility: hidden;
+        }
+
+        #offres img {
+            width: 97%;
+        }
+
+        #activites {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+
+        #activites a {
+            width: 100%;
+        }
+
+        #activites img {
+            width: 100%;
+        }
+
+        #activites h3{
+            width: auto;
+        }
+
+        ul.footer {
+            flex-wrap: wrap;
+            margin-bottom: 0;
+            gap: 50px;
+        }
     }
 }
