@@ -226,7 +226,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    gap: 31px;
+    justify-content: space-around;
     margin-top: 23px;
     margin-bottom: 40px;
 }
@@ -234,7 +234,8 @@ main {
 #offres a {
     background-color: #FFFFFF;
     border-radius: 20px;
-    margin: 0px
+    margin: 0px;
+    margin-bottom: 31px;
 }
 
 #offres a.plus {
