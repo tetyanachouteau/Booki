@@ -20,7 +20,7 @@ i {
 }
 
 h1 {
-    font-weight: 700;
+    font-weight: 800;
     font-size: 22px;
     line-height: 26px;
     color: #000000;
@@ -111,7 +111,7 @@ main {
     display: flex;
     margin: 0;
     padding-left: 0;
-    justify-content: space-around;
+    gap: 35px;
     width: 100%;
 }
 
@@ -119,7 +119,6 @@ main {
     height: 40px;
     display: flex;
     align-items: center;
-    justify-content: center;
     border: 1px solid #D9D9D9;
     border-radius: 20px;
     font-weight: 700;
@@ -151,6 +150,10 @@ main {
     color: #FFFFFF;
     font-weight: 700;
     font-size: 18px;
+}
+
+#iconRecherche {
+    display: none;
 }
 
 #pictomap {
@@ -227,7 +230,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
-    justify-content: space-around;
+    gap: 27px;
     margin-top: 23px;
     margin-bottom: 40px;
 }
@@ -372,7 +375,7 @@ ul.footer li li {
 
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
-@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
+@media only screen and (min-device-width : 992px) and (max-device-width : 1400px) {
     body {
         padding-left: 60px;
         padding-right: 60px;
@@ -428,142 +431,201 @@ ul.footer li li {
     ul.footer {
         gap: 120px;
     }
+}
 
-    /* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
+/* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
-    @media only screen and (min-device-width : 320px) and (max-device-width : 728px) {
-        body {
-            padding-left: 0;
-            padding-right: 0;
-        }
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+    body {
+        padding-left: 0;
+        padding-right: 0;
+    }
 
-        header {
-            flex-direction: column;
-        }
+    header {
+        flex-direction: column;
+    }
 
-        #logo {
-            display: flex;
-            justify-content: center;
-        }
+    #logo {
+        display: flex;
+        justify-content: center;
+    }
 
-        #logo img {
-            margin-top: 21px;
-        }
+    #logo img {
+        margin-top: 21px;
+    }
 
-        header nav ul {
-            justify-content: space-around;
-            padding-left: 0;
-        }
+    h2 {
+        margin-bottom: 30px;
+    }
 
-        header nav li {
-            border-bottom: 2px solid #c0d7f8;
-            padding-bottom: 21px;
-            margin-right: 0;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-        }
+    header {
+        margin-bottom: 30px;
+    }
 
-        /* hérite de li et modifie juste celui qui a la classe active */
-        header nav li.active {
-            border-bottom-color: #0065FC;
-        }
+    header nav ul {
+        justify-content: space-around;
+        padding-left: 0;
+    }
 
-        #recherche {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+    header nav li {
+        border-bottom: 2px solid #c0d7f8;
+        padding-bottom: 21px;
+        margin-right: 0;
+        width: 100%;
+        display: flex;
+        font-weight: 700;
+        justify-content: center;
+    }
 
-        #lieu {
-            width: 100%;
-        }
+    /* hérite de li et modifie juste celui qui a la classe active */
+    header nav li.active {
+        border-bottom-color: #0065FC;
+    }
 
-        #filtres {
-            flex-direction: column;
-        }
+    header nav li.active a {
+        color: #0065FC;
+    }
 
-        #recherche div ul {
-            flex-wrap: wrap;
-            justify-content: space-around;
-        }
+    #recherche {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-        #recherche div li {
-            margin-bottom: 10px;
-            /* Pour avoir les boutons tous identiques en taille */
-            min-width: 196px;
-        }
+    #lieu {
+        width: 100%;
+    }
 
-        label {
-            margin-bottom: 15px;
-        }
+    #filtres {
+        flex-direction: column;
+    }
 
-        #hebergement {
-            margin-bottom: 0;
-        }
+    #recherche div ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
 
-        #populaires {
-            order: -1;
-            border-radius: 0;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+    #recherche div li {
+        margin-bottom: 10px;
+        /* Pour avoir les boutons tous identiques en taille */
+        min-width: 125px;
+        font-size: 12px;
+    }
 
-        #populaires div {
-            gap: 0;
-        }
+    #recherche div li i {
+        font-size: 18px;
+    }
 
-        #populaires a {
-            box-shadow: 0px 0px 9px 2px #E2E2E2;
-            width: 100%;
-            margin-bottom: 12px;
-        }
+    #recherche button {
+        width: 52px;
+    }
 
-        #offres {
-            border-radius: 0;
-            background-color: #FFFFFF;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 0;
-            padding-bottom: 0;
-        }
+    #iconRecherche {
+        display: block;
+        color: #FFFFFF;
+        font-size: 16px;
+    }
 
-        #offres a {
-            box-shadow: 0px 0px 9px 2px #E2E2E2;
-            width: 100%;
-            margin-bottom: 12px;
-        }
+    #labelRecherche {
+        display: none;
+    }
 
-        #offres a.plus {
-            box-shadow: none;
-            visibility: hidden;
-        }
+    label {
+        margin-bottom: 15px;
+    }
 
-        #offres img {
-            width: 97%;
-        }
+    #hebergement {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
 
-        #activites {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
+    #populaires {
+        width: auto;
+        order: -1;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 
-        #activites a {
-            width: 100%;
-        }
+    #populaires div {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 0px;
+        gap: 0;
+    }
 
-        #activites img {
-            width: 100%;
-        }
+    #populaires div.infos {
+        display: block;
+    }
 
-        #activites h3{
-            width: auto;
-        }
+    #populaires img {
+        width: 106px;
+    }
 
-        ul.footer {
-            flex-wrap: wrap;
-            margin-bottom: 0;
-            gap: 50px;
-        }
+    #populaires a {
+        box-shadow: 0px 0px 9px 2px #E2E2E2;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #populaires h3 {
+        font-size: 14px;
+    }
+
+    #populaires p {
+        font-size: 13px;
+    }
+
+    #populaires figcaption {
+        margin-bottom: 10px;
+    }
+
+    #offres {
+        border-radius: 0;
+        background-color: #FFFFFF;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    #offres a {
+        box-shadow: 0px 0px 9px 2px #E2E2E2;
+        width: 100%;
+        margin-bottom: 12px;
+    }
+
+    #offres a.plus {
+        box-shadow: none;
+        visibility: hidden;
+    }
+
+    #offres img {
+        width: 97%;
+    }
+
+    #activites {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    #activites a {
+        width: 100%;
+    }
+
+    #activites img {
+        width: 100%;
+        height: 208px;
+    }
+
+    #activites h3 {
+        width: auto;
+    }
+
+    ul.footer {
+        margin-bottom: 0;
+        gap: 50px;
+        flex-direction: column;
     }
 }
