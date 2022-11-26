@@ -19,7 +19,7 @@ i {
     color: #0065FC;
 }
 
-h1 {
+h2 {
     font-weight: 800;
     font-size: 22px;
     line-height: 26px;
@@ -28,7 +28,7 @@ h1 {
     margin-top: 0px;
 }
 
-h2 {
+h3 {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
@@ -37,7 +37,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-h3 {
+h4 {
     margin-top: 4px;
     margin-bottom: 9px;
 }
@@ -276,7 +276,7 @@ main {
     padding: 40px 40px 40px 37px;
 }
 
-#populaires div.titre {
+#populaires h2.titre {
     display: flex;
     justify-content: space-between;
     margin: 0px;
@@ -346,7 +346,7 @@ main {
     margin: 0px;
 }
 
-#activites h3 {
+#activites h4 {
     margin: 20px;
 }
 
@@ -375,7 +375,7 @@ ul.footer li li {
 
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
-@media only screen and (min-device-width : 992px) and (max-device-width : 1400px) {
+@media only screen and (max-device-width : 1400px) {
     body {
         padding-left: 60px;
         padding-right: 60px;
@@ -407,7 +407,7 @@ ul.footer li li {
         width: 252px;
     }
 
-    #populaires h3 {
+    #populaires h4 {
         font-size: 14px;
     }
 
@@ -424,7 +424,7 @@ ul.footer li li {
         height: 208px;
     }
 
-    #activites h3 {
+    #activites h4 {
         width: 148px;
     }
 
@@ -436,7 +436,7 @@ ul.footer li li {
 /* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
-@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
+@media only screen and (max-device-width : 768px) {
     body {
         padding-left: 0;
         padding-right: 0;
@@ -455,7 +455,7 @@ ul.footer li li {
         margin-top: 21px;
     }
 
-    h2 {
+    h4 {
         margin-bottom: 30px;
     }
 
@@ -569,7 +569,7 @@ ul.footer li li {
         margin-bottom: 12px;
     }
 
-    #populaires h3 {
+    #populaires h4 {
         font-size: 14px;
     }
 
@@ -619,7 +619,7 @@ ul.footer li li {
         height: 208px;
     }
 
-    #activites h3 {
+    #activites h4 {
         width: auto;
     }
 
