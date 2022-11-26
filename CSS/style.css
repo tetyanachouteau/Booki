@@ -111,7 +111,7 @@ main {
     display: flex;
     margin: 0;
     padding-left: 0;
-    gap: 35px;
+    gap: 20px;
     width: 100%;
 }
 
@@ -229,6 +229,7 @@ main {
 #offres div {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 0px;
     gap: 27px;
     margin-top: 23px;
@@ -240,6 +241,7 @@ main {
     border-radius: 20px;
     margin: 0px;
     margin-bottom: 31px;
+    flex-basis: 30%;
 }
 
 #offres a.plus {
@@ -251,10 +253,12 @@ main {
 
 #offres figure {
     margin: 0px;
+    border: 5px solid #FFFFFF;
+    border-radius: 20px;
 }
 
 #offres figcaption {
-    margin: 0px 16px 16px 16px;
+    margin: 0px 11px 16px 11px;
 }
 
 #offres p {
@@ -263,9 +267,8 @@ main {
 }
 
 #offres img {
-    width: 236px;
+    width: 100%;
     height: 119px;
-    border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -297,6 +300,7 @@ main {
     border-radius: 20px;
     margin-bottom: 33px;
     display: flex;
+    flex-basis: 30%;
 }
 
 #populaires figure {
@@ -392,6 +396,7 @@ ul.footer li li {
     #populaires div {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         margin-bottom: 0px;
     }
 
@@ -404,7 +409,7 @@ ul.footer li li {
     }
 
     #populaires a {
-        width: 252px;
+        min-width: 252px;
     }
 
     #populaires h4 {
@@ -419,8 +424,12 @@ ul.footer li li {
         margin-bottom: 10px;
     }
 
+    #activites a {
+        flex-basis: 40%;
+    }
+
     #activites img {
-        width: 188px;
+        width: 100%;
         height: 208px;
     }
 
@@ -511,6 +520,7 @@ ul.footer li li {
         /* Pour avoir les boutons tous identiques en taille */
         min-width: 125px;
         font-size: 12px;
+        flex-basis: 40%;
     }
 
     #recherche div li i {
@@ -552,7 +562,7 @@ ul.footer li li {
         display: flex;
         flex-wrap: wrap;
         margin-bottom: 0px;
-        gap: 0;
+        gap: 20px;
     }
 
     #populaires div.infos {
@@ -571,6 +581,7 @@ ul.footer li li {
 
     #populaires h4 {
         font-size: 14px;
+        margin-bottom: 9px;
     }
 
     #populaires p {
@@ -593,6 +604,7 @@ ul.footer li li {
     #offres a {
         box-shadow: 0px 0px 9px 2px #E2E2E2;
         width: 100%;
+        min-width: 180px;
         margin-bottom: 12px;
     }
 
@@ -602,7 +614,7 @@ ul.footer li li {
     }
 
     #offres img {
-        width: 97%;
+        width: 100%;
     }
 
     #activites {
