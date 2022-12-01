@@ -1,11 +1,11 @@
 body {
-    margin: 0px auto;
-    padding-left: 50px;
-    padding-right: 50px;
     font-family: 'Raleway';
 }
 
 #container {
+    margin: 0px auto;
+    padding-left: 50px;
+    padding-right: 50px;
     max-width: 1400px;
 }
 
