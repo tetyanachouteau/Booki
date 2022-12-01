@@ -384,7 +384,7 @@ ul.footer li li {
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
 @media only screen and (max-width : 992px) {
-    body {
+     #container {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -402,6 +402,7 @@ ul.footer li li {
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 0px;
+        gap: 10px;
     }
 
     #populaires div.infos {
@@ -413,7 +414,7 @@ ul.footer li li {
     }
 
     #populaires a {
-        min-width: 252px;
+        min-width: 245px;
     }
 
     #populaires h4 {
@@ -454,7 +455,7 @@ ul.footer li li {
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
 @media only screen and (max-width : 768px) {
-    body {
+    #container {
         padding-left: 0;
         padding-right: 0;
     }
@@ -568,6 +569,7 @@ ul.footer li li {
 
     #populaires div {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 0px;
         gap: 20px;
@@ -609,6 +611,10 @@ ul.footer li li {
         padding-bottom: 0;
     }
 
+    #offres div {
+        flex-direction: column;
+    }
+
     #offres a {
         box-shadow: 0px 0px 9px 2px #E2E2E2;
         width: 100%;
@@ -631,6 +637,10 @@ ul.footer li li {
 
     #activites a {
         width: 100%;
+    }
+
+    #activites div {
+        flex-direction: column;
     }
 
     #activites img {
