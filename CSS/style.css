@@ -1,9 +1,12 @@
 body {
     margin: 0px auto;
-    max-width: 1400px;
     padding-left: 50px;
     padding-right: 50px;
     font-family: 'Raleway';
+}
+
+#container {
+    max-width: 1400px;
 }
 
 a {
@@ -242,6 +245,7 @@ main {
     margin: 0px;
     margin-bottom: 31px;
     flex-basis: 30%;
+    min-width: 240px;
 }
 
 #offres a.plus {
@@ -379,7 +383,7 @@ ul.footer li li {
 
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
-@media only screen and (max-device-width : 1400px) {
+@media only screen and (max-width : 992px) {
     body {
         padding-left: 60px;
         padding-right: 60px;
@@ -424,6 +428,10 @@ ul.footer li li {
         margin-bottom: 10px;
     }
 
+    #offre a {
+        min-width: 180px;
+    }
+
     #activites a {
         flex-basis: 40%;
     }
@@ -445,7 +453,7 @@ ul.footer li li {
 /* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
-@media only screen and (max-device-width : 768px) {
+@media only screen and (max-width : 768px) {
     body {
         padding-left: 0;
         padding-right: 0;
@@ -604,7 +612,6 @@ ul.footer li li {
     #offres a {
         box-shadow: 0px 0px 9px 2px #E2E2E2;
         width: 100%;
-        min-width: 180px;
         margin-bottom: 12px;
     }
 
