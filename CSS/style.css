@@ -1,9 +1,12 @@
 body {
+    font-family: 'Raleway';
+}
+
+#container {
     margin: 0px auto;
-    max-width: 1400px;
     padding-left: 50px;
     padding-right: 50px;
-    font-family: 'Raleway';
+    max-width: 1400px;
 }
 
 a {
@@ -242,6 +245,7 @@ main {
     margin: 0px;
     margin-bottom: 31px;
     flex-basis: 30%;
+    min-width: 240px;
 }
 
 #offres a.plus {
@@ -379,8 +383,8 @@ ul.footer li li {
 
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
-@media only screen and (max-device-width : 1400px) {
-    body {
+@media screen and (max-width : 992px) {
+     #container {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -398,6 +402,7 @@ ul.footer li li {
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 0px;
+        gap: 10px;
     }
 
     #populaires div.infos {
@@ -409,7 +414,7 @@ ul.footer li li {
     }
 
     #populaires a {
-        min-width: 252px;
+        min-width: 245px;
     }
 
     #populaires h4 {
@@ -422,6 +427,10 @@ ul.footer li li {
 
     #populaires figcaption {
         margin-bottom: 10px;
+    }
+
+    #offre a {
+        min-width: 180px;
     }
 
     #activites a {
@@ -445,8 +454,8 @@ ul.footer li li {
 /* Mobile : https://media-queries.aliasdmc.fr/media-queries-live.php 
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
-@media only screen and (max-device-width : 768px) {
-    body {
+@media screen and (max-width : 768px) {
+    #container {
         padding-left: 0;
         padding-right: 0;
     }
@@ -560,6 +569,7 @@ ul.footer li li {
 
     #populaires div {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         margin-bottom: 0px;
         gap: 20px;
@@ -601,10 +611,13 @@ ul.footer li li {
         padding-bottom: 0;
     }
 
+    #offres div {
+        flex-direction: column;
+    }
+
     #offres a {
         box-shadow: 0px 0px 9px 2px #E2E2E2;
         width: 100%;
-        min-width: 180px;
         margin-bottom: 12px;
     }
 
@@ -624,6 +637,10 @@ ul.footer li li {
 
     #activites a {
         width: 100%;
+    }
+
+    #activites div {
+        flex-direction: column;
     }
 
     #activites img {
