@@ -136,6 +136,7 @@ main {
 #recherche div li a {
     margin-left: 10px;
     white-space: nowrap;
+    font-size: 15px;
 }
 
 #recherche form {
@@ -227,14 +228,14 @@ main {
     background: #F2F2F2;
     border-radius: 20px;
     padding: 40px;
+    flex-basis: 70%;
 }
 
 #offres div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     padding: 0px;
-    gap: 27px;
     margin-top: 23px;
     margin-bottom: 40px;
 }
@@ -245,7 +246,7 @@ main {
     margin: 0px;
     margin-bottom: 31px;
     flex-basis: 30%;
-    min-width: 240px;
+    /* min-width: 240px; */
 }
 
 #offres a.plus {
@@ -279,7 +280,7 @@ main {
 #populaires {
     background: #F2F2F2;
     border-radius: 20px;
-    width: 400px;
+    flex-basis: 30%;
     padding: 40px 40px 40px 37px;
 }
 
@@ -304,7 +305,7 @@ main {
     border-radius: 20px;
     margin-bottom: 33px;
     display: flex;
-    flex-basis: 30%;
+    min-height: 215px;
 }
 
 #populaires figure {
@@ -321,7 +322,6 @@ main {
 
 #populaires img {
     width: 137px;
-    height: 144px;
     border: 5px solid #FFFFFF;
     border-radius: 20px 0px 0px 20px;
 }
@@ -332,22 +332,23 @@ main {
 }
 
 #activites img {
-    width: 302px;
+    width: 100%;
     height: 388px;
     border-radius: 20px 20px 0px 0px;
 }
 
 #activites div {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     margin-bottom: 40px;
+    gap: 20px;
 }
 
 #activites a {
     margin-top: 23px;
     box-shadow: 0px 0px 9px 2px #E2E2E2;
     border-radius: 20px;
+    flex-basis: 25%;
 }
 
 #activites figure {
@@ -360,9 +361,9 @@ main {
 
 ul.footer {
     display: flex;
-    justify-content: space-between;
     background: #F2F2F2;
     padding: 45px 70px 70px 70px;
+    gap: 150px;
 }
 
 ul.footer li {
@@ -384,7 +385,12 @@ ul.footer li li {
 /*j'ai ajouté cette média query(requete recherche= selection) tout les ecrans qui ont taille max de 1024 en mode device*/
 /* tablette */
 @media screen and (max-width : 992px) {
-     #container {
+    header nav li:hover {
+        border-top: none;
+        padding-top: 44px;
+    }
+
+    #container {
         padding-left: 60px;
         padding-right: 60px;
     }
@@ -399,10 +405,8 @@ ul.footer li li {
 
     #populaires div {
         display: flex;
-        flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 0px;
-        gap: 10px;
     }
 
     #populaires div.infos {
@@ -410,11 +414,12 @@ ul.footer li li {
     }
 
     #populaires img {
-        width: 106px;
+        width: 30%;
     }
 
     #populaires a {
-        min-width: 245px;
+        flex-basis: 33%;
+        min-height: auto;
     }
 
     #populaires h4 {
@@ -433,21 +438,16 @@ ul.footer li li {
         min-width: 180px;
     }
 
-    #activites a {
-        flex-basis: 40%;
-    }
-
     #activites img {
-        width: 100%;
         height: 208px;
     }
 
-    #activites h4 {
-        width: 148px;
+    footer {
+        white-space: nowrap;
     }
 
     ul.footer {
-        gap: 120px;
+        gap: 40px;
     }
 }
 
@@ -455,6 +455,10 @@ ul.footer li li {
     Mais on recupère aussi le desgin tablette car on est dans la media query tablette
     */
 @media screen and (max-width : 768px) {
+    body{
+        margin: 0px;
+    }
+
     #container {
         padding-left: 0;
         padding-right: 0;
@@ -528,12 +532,11 @@ ul.footer li li {
         margin-bottom: 10px;
         /* Pour avoir les boutons tous identiques en taille */
         min-width: 125px;
-        font-size: 12px;
         flex-basis: 40%;
     }
 
-    #recherche div li i {
-        font-size: 18px;
+    #recherche div li a {
+        font-size: 12px;
     }
 
     #recherche button {
@@ -543,7 +546,7 @@ ul.footer li li {
     #iconRecherche {
         display: block;
         color: #FFFFFF;
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     #labelRecherche {
@@ -555,7 +558,6 @@ ul.footer li li {
     }
 
     #hebergement {
-        flex-direction: column;
         margin-bottom: 0;
     }
 
@@ -587,6 +589,8 @@ ul.footer li li {
         box-shadow: 0px 0px 9px 2px #E2E2E2;
         width: 100%;
         margin-bottom: 12px;
+        height: 150px;
+        flex-basis: auto;
     }
 
     #populaires h4 {
@@ -636,7 +640,7 @@ ul.footer li li {
     }
 
     #activites a {
-        width: 100%;
+        flex-basis: 100%;
     }
 
     #activites div {
